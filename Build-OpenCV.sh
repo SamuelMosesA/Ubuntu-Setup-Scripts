@@ -192,7 +192,7 @@ fi
 
 cd opencv
 # Check out the latest tag, which has to be the version you check out in contrib too
-latest_tag="$(git tag | egrep -v '-' | tail -1)"
+latest_tag=3.4.5
 echo "Installing OpenCV Version: $latest_tag"
 git checkout -f $latest_tag
 (
