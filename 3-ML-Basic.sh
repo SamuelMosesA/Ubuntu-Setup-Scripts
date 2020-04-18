@@ -1,15 +1,7 @@
 #!/bin/bash
 
-if [[ -n $(echo $SHELL | grep "zsh") ]] ; then
-    SHELLRC=~/.zshrc
-elif [[ -n $(echo $SHELL | grep "bash") ]] ; then
-    SHELLRC=~/.bashrc
-elif [[ -n $(echo $SHELL | grep "ksh") ]] ; then
-    SHELLRC=~/.kshrc
-else
-    echo "Unidentified shell $SHELL"
-    exit # Ain't nothing I can do to help you buddy :P
-fi
+SHELLRC=~/.bashrc
+
 
 # To note: the execute() function doesn't handle pipes well
 execute () {
