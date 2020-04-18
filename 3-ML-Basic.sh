@@ -25,7 +25,7 @@ run_and_echo () {
 # For utilities such as lspci
 execute sudo apt-get install pciutils
 
-if [[ (-n $(lspci | grep -i nvidia)) && (! ( -d "/usr/local/cuda" ) ) ]]; then
+if [[ (-n $(lspci | grep -i nvidia)) && (! ( -d "/usr/local/cuda" )) ]]; then
     echo "Installing the latest cuda"
     cuda_instr_block=$(wget -q -O - 'https://developer.nvidia.com/cuda-downloads' | grep wget | head -n 1)
     cuda_download_command=$(echo ${cuda_instr_block} | sed 's#\(.*\)"cudaBash">.*#\1#' | sed 's#.*"cudaBash">\([^<]*\).*#\1#' )
