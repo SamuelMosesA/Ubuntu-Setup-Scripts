@@ -120,7 +120,7 @@ execute sudo apt-get install htop gparted expect -y
 #     execute sudo systemctl restart docker
 # else
 #     echo "Skipping nvidia-docker2 installation. Requires Nvidia GPU with drivers installed"
-fi
+# fi
 
 
 # Grub customization
