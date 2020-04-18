@@ -82,11 +82,11 @@ execute sudo apt-get install lm-sensors hddtemp -y
 execute sudo apt-get install psensor xsensors -y
 execute sudo apt-get update
 
-execute sudo apt-get install redshift redshift-gtk shutter -y
+# execute sudo apt-get install redshift redshift-gtk shutter -y
 
-mkdir -p ~/.config/autostart 
-cp ./config_files/tilda.desktop ~/.config/autostart
-cp ./config_files/redshift-gtk.desktop ~/.config/autostart
+# mkdir -p ~/.config/autostart 
+# cp ./config_files/tilda.desktop ~/.config/autostart
+# cp ./config_files/redshift-gtk.desktop ~/.config/autostart
 
 execute sudo apt-get install htop gparted expect -y
 
