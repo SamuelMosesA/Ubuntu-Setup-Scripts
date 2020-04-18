@@ -146,12 +146,12 @@ if [[ $(cat /etc/os-release | grep "VERSION_ID" | grep -o -E '[1-9][1-9]') -ge 1
 fi
 
 # Browsers
-wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
-sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
-execute sudo apt-get update  -y
-execute sudo apt-get install google-chrome-stable -y
-#execute sudo apt-get install chromium-browser -y
-execute sudo apt-get install firefox -y
+# wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
+# sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+# execute sudo apt-get update  -y
+# execute sudo apt-get install google-chrome-stable -y
+# #execute sudo apt-get install chromium-browser -y
+# execute sudo apt-get install firefox -y
 
 # Install tor
 #if [[ ! -n $(lsb_release -d | grep 18) ]]; then
