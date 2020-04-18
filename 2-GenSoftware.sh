@@ -91,9 +91,9 @@ execute sudo apt-get update
 execute sudo apt-get install htop gparted expect -y
 
 # Boot repair
-execute sudo add-apt-repository ppa:yannubuntu/boot-repair -y
-execute sudo apt-get update
-execute sudo apt-get install -y boot-repair
+# execute sudo add-apt-repository ppa:yannubuntu/boot-repair -y
+# execute sudo apt-get update
+# execute sudo apt-get install -y boot-repair
 
 # Installation of Docker Community Edition
 if ! which docker > /dev/null; then
